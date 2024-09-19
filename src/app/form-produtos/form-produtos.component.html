@@ -1,0 +1,18 @@
+<div class="container">
+    <h3>Formulário de Produtos</h3>
+    <div class="mb-3">
+        <label for="nome" class="form-label">NOME:</label>
+        <input [(ngModel)]="produto.nome" class="form-control"
+            id="nome" placeholder="nome do produto ...">
+    </div>
+    <div class="mb-3">
+        <label for="preco" class="form-label">PRECO:</label>
+        <input type="number" [(ngModel)]="produto.preco" class="form-control"
+            id="preco" placeholder="preço ...">
+    </div>
+    <button class="btn btn-primary" (click)="cadastrar()" >CADASTRAR</button>
+
+
+    {{produto | json}}
+    
+</div>
