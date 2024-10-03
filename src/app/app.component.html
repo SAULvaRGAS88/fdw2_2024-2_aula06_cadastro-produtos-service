@@ -1,10 +1,37 @@
-<h1>Cadastro de Produtos</h1>
+<!-- app.component.html -->
+<div class="container mt-4">
+    <h1 class="mb-4 text-center">Cadastro de Produtos</h1>
+    
+    <!-- Componente de Navegação ou Menu Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+      <div class="container-fluid">
 
-<app-list-card-produtos>    
-</app-list-card-produtos>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
 
-<app-tabela-produtos>    
-</app-tabela-produtos>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/">Início</a>
+            </li>
 
-<app-form-produtos>
-</app-form-produtos>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/produtos">Produtos</a>
+            </li>
+
+            <li class="nav-item">
+              <a routerLink="/cadastro-produtos" class="nav-link">Cadastro de Produtos</a>
+            </li>
+
+            <li class="nav-item">
+              <a routerLink="/tabela-produtos" class="nav-link">Tabela de Produtos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <router-outlet></router-outlet>
+</div>

@@ -10,7 +10,25 @@
         <input type="number" [(ngModel)]="produto.preco" class="form-control"
             id="preco" placeholder="preço ...">
     </div>
-    <button class="btn btn-primary" (click)="cadastrar()" >CADASTRAR</button>
+
+    <div class="mb-3">
+        <label for="marca" class="form-label">Marca:</label>
+        <input [(ngModel)]="produto.marca" class="form-control"
+            id="marca" placeholder="Marca ...">
+    </div>
+
+    <div class="mb-3">
+        <label for="date" class="form-label">Data:</label>
+        <input type="date" [(ngModel)]="produto.dataValidade" class="form-control"
+            id="data" placeholder="data ...">
+    </div>
+    
+    <button class="btn btn-primary me-3" (click)="salvar()" >
+        {{botaoAcao}}
+    </button>
+    <button class="btn btn-primary" (click)="voltar()">
+        VOLTAR
+    </button>
 
 
     {{produto | json}}

@@ -8,6 +8,10 @@ import { FormProdutosComponent } from './form-produtos/form-produtos.component';
 import { FormsModule } from '@angular/forms';
 import { CardProdutoComponent } from './card-produto/card-produto.component';
 import { ListCardProdutosComponent } from './list-card-produtos/list-card-produtos.component';
+import { MoedaPipe } from './moeda.pipe';
+import { FiltroPesquisaPipe } from './filtro-pesquisa.pipe';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { ListCardProdutosComponent } from './list-card-produtos/list-card-produt
     TabelaProdutosComponent,
     FormProdutosComponent,
     CardProdutoComponent,
-    ListCardProdutosComponent
+    ListCardProdutosComponent,
+    MoedaPipe,
+    FiltroPesquisaPipe,
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

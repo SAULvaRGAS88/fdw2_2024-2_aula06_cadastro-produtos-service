@@ -9,9 +9,14 @@ import { ProdutoService } from '../produto.service';
 })
 export class TabelaProdutosComponent {
   listaProdutos: Produto[] = [];  
+  nomePeswquisado = "";
 
   constructor(private produtoService: ProdutoService) {
     this.listaProdutos = produtoService.listar();
+  }
+
+  deletar(id?:number){
+    this.produtoService.deletar(id);
   }
 
 }
